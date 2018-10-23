@@ -12,14 +12,20 @@
   border-color: black;
   border-style: solid; }
 
+#imageContainer {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  top: 12.5vh; }
+
 #image {
   object-fit: cover;
   width: 100%;
   height: 100%; }
 
-#imageContainer {
-  z-index: 1;
-  width: 100%; }
+#contentContainer {
+  position: relative;
+  top: 12.5vh; }
 
 #content {
   z-index: 0;
@@ -41,7 +47,7 @@
   margin: auto; }
 
 .headerText {
-  font-size: 2.5vmin;
+  font-size: 2.5vh;
   font-weight: bold;
   color: #36211B;
   background-color: #739C49; }
@@ -68,6 +74,7 @@ td {
 
 table, th, td {
   border: 1px solid black;
+  margin: 1.4vh 0;
   padding: 0.7vh 0.7vw; }
 
 li {
@@ -88,6 +95,7 @@ html, body {
 @media screen and (min-aspect-ratio: 1 / 1) and (min-width: 700px) {
   #imageContainer {
     position: fixed;
+    top: 0;
     height: 100%;
     width: 61.2%; }
   #contentContainer {
